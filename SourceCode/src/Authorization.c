@@ -3,35 +3,36 @@
 
 #define TRUE   1
 #define FALSE  0
+#define bool 
 
-bool Want_to_modify = TRUE;				// ÌáÖ÷¶¯ĞŞ¸Ä
-bool Want_to_advance_announce = TRUE;	// ÌáÇ°¹«²¼ÉêÇë
-bool Want_to_Second_Trail = TRUE;		// ÌáÊµÉó
-bool Want_to_Review_BasedOn_ChangedAtInternationalStage = TRUE;		// ÒÔ¹ú¼Ê½×¶Î×öµÄĞŞ¸Ä×÷ÎªÉó²é»ù´¡µÄ
-bool Want_Priority = TRUE;				// ÒªÇóÓÅÏÈÈ¨
-bool Has_priority = TRUE;				// ÓĞÓÅÏÈÈ¨
+bool Want_to_modify = TRUE;				// æä¸»åŠ¨ä¿®æ”¹
+bool Want_to_advance_announce = TRUE;	// æå‰å…¬å¸ƒç”³è¯·
+bool Want_to_Second_Trail = TRUE;		// æå®å®¡
+bool Want_to_Review_BasedOn_ChangedAtInternationalStage = TRUE;		// ä»¥å›½é™…é˜¶æ®µåšçš„ä¿®æ”¹ä½œä¸ºå®¡æŸ¥åŸºç¡€çš„
+bool Want_Priority = TRUE;				// è¦æ±‚ä¼˜å…ˆæƒ
+bool Has_priority = TRUE;				// æœ‰ä¼˜å…ˆæƒ
 
-#define FAILED_WITHDRAW				0	// ³·»Ø
-#define FAILED_TERMIATION			0	// ÖÕÖ¹
-#define FAILED_REJECT				0	// ²µ»Ø
-#define FAILED_EFFECT_TERMINAT		0	// Ğ§Á¦ÖÕÖ¹
-#define FAILED_NOT_REQUIRED			0	// Î´ÒªÇó
+#define FAILED_WITHDRAW				0	// æ’¤å›
+#define FAILED_TERMIATION			0	// ç»ˆæ­¢
+#define FAILED_REJECT				0	// é©³å›
+#define FAILED_EFFECT_TERMINAT		0	// æ•ˆåŠ›ç»ˆæ­¢
+#define FAILED_NOT_REQUIRED			0	// æœªè¦æ±‚
 
-#define FAILED_WITHDRAW_FOR_PCT			0	// PCT³·»Ø
-#define FAILED_WITHDRAWED_FOR_PCT		0	// PCT±»ÊÓÎª³·»Ø
-#define FAILED_WITHDRAW_CHINA_FOR_PCT	0	// PCTÖ¸¶¨ÖĞ¹ú±»³·»ØµÄ
+#define FAILED_WITHDRAW_FOR_PCT			0	// PCTæ’¤å›
+#define FAILED_WITHDRAWED_FOR_PCT		0	// PCTè¢«è§†ä¸ºæ’¤å›
+#define FAILED_WITHDRAW_CHINA_FOR_PCT	0	// PCTæŒ‡å®šä¸­å›½è¢«æ’¤å›çš„
 
 
 // All date 
-#define Priority_date			// ÓÅÏÈÈ¨ÈÕ
+#define Priority_date			// ä¼˜å…ˆæƒæ—¥
 
-#define Application_date		// Êµ¼ÊÉêÇëÈÕ 	A28  A42
+#define Application_date		// å®é™…ç”³è¯·æ—¥ 	A28  A42
 
-#define RECEIVED_A_NOTICE		// ÊÕµ½Í¨ÖªÊéÖ®ÈÕ
+#define RECEIVED_A_NOTICE		// æ”¶åˆ°é€šçŸ¥ä¹¦ä¹‹æ—¥
 
-#define DATE2APP_SECOND_TRAIL 	// Ìá³öÊµÉóÖ®ÈÕ
+#define DATE2APP_SECOND_TRAIL 	// æå‡ºå®å®¡ä¹‹æ—¥
 
-#define PCT_EnterNational_date	// PCT½øÈë¹ú¼Ò½×¶ÎÖ®ÈÕ(¼´½øÈëÈÕ)
+#define PCT_EnterNational_date	// PCTè¿›å…¥å›½å®¶é˜¶æ®µä¹‹æ—¥(å³è¿›å…¥æ—¥)
 
 #define YEARS_3
 #define YEARS_10
@@ -47,30 +48,30 @@ bool Has_priority = TRUE;				// ÓĞÓÅÏÈÈ¨
 #define DAYS_15
 
 
-#define Novelty_Grace_period				MONTH_6			// ²»É¥Ê§ĞÂÓ±ĞÔµÄ¿íÏŞÆÚ
-#define Priority_Grace_period_Design		MONTH_6			// Íâ¹ÛÉè¼ÆÓÅÏÈÈ¨ÆÚÏŞ 6¸öÔÂÄÚ
-#define Priority_Grace_period_Inovention	MONTH_12		// ÊµÓÃĞÂĞÍÓÅÏÈÈ¨ÆÚÏŞ 12¸öÔÂÄÚ
-#define Priority_Grace_period_Unity			MONTH_12		// ·¢Ã÷ÓÅÏÈÈ¨ÆÚÏŞ 12¸öÔÂÄÚ
+#define Novelty_Grace_period				MONTH_6			// ä¸ä¸§å¤±æ–°é¢–æ€§çš„å®½é™æœŸ
+#define Priority_Grace_period_Design		MONTH_6			// å¤–è§‚è®¾è®¡ä¼˜å…ˆæƒæœŸé™ 6ä¸ªæœˆå†…
+#define Priority_Grace_period_Inovention	MONTH_12		// å®ç”¨æ–°å‹ä¼˜å…ˆæƒæœŸé™ 12ä¸ªæœˆå†…
+#define Priority_Grace_period_Unity			MONTH_12		// å‘æ˜ä¼˜å…ˆæƒæœŸé™ 12ä¸ªæœˆå†…
 
 
 
 // Fees
-// ÒÔÏÂËÄÖÖ¿É¼õ»º
-#define FEES_APP			// ÉêÇë·Ñ
-#define FEES_SECOND_TRAIL	// ÊµÉó·Ñ
-#define FEES_REVIEW		// ¸´Éó·Ñ
-#define FEES_ANNUAL		// Äê·Ñ  (ÊÚÈ¨ÆğÈıÄêÄê·Ñ)
+// ä»¥ä¸‹å››ç§å¯å‡ç¼“
+#define FEES_APP			// ç”³è¯·è´¹
+#define FEES_SECOND_TRAIL	// å®å®¡è´¹
+#define FEES_REVIEW		// å¤å®¡è´¹
+#define FEES_ANNUAL		// å¹´è´¹  (æˆæƒèµ·ä¸‰å¹´å¹´è´¹)
 
 
-#define FEES_APP_PLUS		// ÉêÇë¸½¼Ó·Ñ (È¨ÀûÒªÇó³¬¹ı10Ïî£¬ËµÃ÷Êé³¬¹ı30Ò³)
-#define FEES_ANNOUNCE_PRINT		// ¹«²¼Ó¡Ë¢·Ñ
-#define FEES_WANT_PRIORITY  // ÓÅÏÈÈ¨ÇëÇó·Ñ
-#define FEES_RECOVER_RIGHT	// »Ö¸´È¨ÀûÇëÇó·Ñ
-#define FEES_EXTEND_TIME	// ÑÓ³¤ÆÚÏŞÇëÇó·Ñ
-#define FEES_REGISTER		// ×¨ÀûµÇ¼Ç·Ñ
-#define FEES_WANT_INVALID	// ÎŞĞ§Ğû¸æÇëÇó·Ñ
-#define FEES_PATENT_EVALUATION_REPORT	// ×¨ÀûÈ¨ÆÀ¼Û±¨¸æÇëÇó·Ñ
-#define FEES_RECORD_ITEM_CHANGE			// ÖøÂ¼ÊÂÏî±ä¸ü·Ñ
+#define FEES_APP_PLUS		// ç”³è¯·é™„åŠ è´¹ (æƒåˆ©è¦æ±‚è¶…è¿‡10é¡¹ï¼Œè¯´æ˜ä¹¦è¶…è¿‡30é¡µ)
+#define FEES_ANNOUNCE_PRINT		// å…¬å¸ƒå°åˆ·è´¹
+#define FEES_WANT_PRIORITY  // ä¼˜å…ˆæƒè¯·æ±‚è´¹
+#define FEES_RECOVER_RIGHT	// æ¢å¤æƒåˆ©è¯·æ±‚è´¹
+#define FEES_EXTEND_TIME	// å»¶é•¿æœŸé™è¯·æ±‚è´¹
+#define FEES_REGISTER		// ä¸“åˆ©ç™»è®°è´¹
+#define FEES_WANT_INVALID	// æ— æ•ˆå®£å‘Šè¯·æ±‚è´¹
+#define FEES_PATENT_EVALUATION_REPORT	// ä¸“åˆ©æƒè¯„ä»·æŠ¥å‘Šè¯·æ±‚è´¹
+#define FEES_RECORD_ITEM_CHANGE			// è‘—å½•äº‹é¡¹å˜æ›´è´¹
 
 // Patent
 
@@ -98,7 +99,7 @@ PATENT_APPLICATION_ENUM Obj_app = 0;
 
 
 /***********************/
-int Recover_right()  // »Ö¸´È¨ÀûÁ÷³Ì
+int Recover_right()  // æ¢å¤æƒåˆ©æµç¨‹
 {
 
 }
@@ -174,10 +175,10 @@ int CheckLegal()
 int CheckObviousDefect()
 {}
 	
-int Fisrt_trail() // ³õÉó A3 A40
+int Fisrt_trail() // åˆå®¡ A3 A40
 {
 
-	if(Want_to_modify) 	// R51	Ö÷¶¯ĞŞ¸ÄÊ±»ú
+	if(Want_to_modify) 	// R51	ä¸»åŠ¨ä¿®æ”¹æ—¶æœº
 		{
 			switch(Obj_app)
 				{
@@ -197,22 +198,22 @@ int Fisrt_trail() // ³õÉó A3 A40
 		}
 
 
-	if(FALSE==CheckFees())  // ·ÑÓÃ
+	if(FALSE==CheckFees())  // è´¹ç”¨
 	{
 		return FALSE;
 	}
 
-	if(FALSE==CheckForm())	// ÉêÇëÎÄ¼şµÄĞÎÊ½Éó²é
+	if(FALSE==CheckForm())	// ç”³è¯·æ–‡ä»¶çš„å½¢å¼å®¡æŸ¥
 	{
 		return FALSE;
 	}
 
-	if(FALSE==CheckLegal())  // ÉêÇëÎÄ¼şµÄ·¨ÂÉÊÖĞø
+	if(FALSE==CheckLegal())  // ç”³è¯·æ–‡ä»¶çš„æ³•å¾‹æ‰‹ç»­
 	{
 		return FALSE;
 	}
 
-	if(FALSE==CheckObviousDefect())		// Ã÷ÏÔÊµÖÊĞÔÈ±Ïİ A5  A25
+	if(FALSE==CheckObviousDefect())		// æ˜æ˜¾å®è´¨æ€§ç¼ºé™· A5  A25
 	{
 		return FALSE;
 	}
@@ -220,14 +221,14 @@ int Fisrt_trail() // ³õÉó A3 A40
 	return TRUE;
 }
 
-int Second_Trail() // ÊµÉó
+int Second_Trail() // å®å®¡
 {
 	if(Want_to_Second_Trail)
 	{
 		if(Priority_date + YEARS_3)  //A35
 		{
 		
-			if(Check3Attrib())	// ÈıĞÔµÈ
+			if(Check3Attrib())	// ä¸‰æ€§ç­‰
 					{
 						return TRUE;
 					}
@@ -242,27 +243,27 @@ int Second_Trail() // ÊµÉó
 	return FALSE;
 }
 
-int Authorization() // ÊÚÈ¨³ÌĞò
+int Authorization() // æˆæƒç¨‹åº
 {
 
 }
 
-int Announced()		// ¹ú¼Ò¹«²¼  A34 
+int Announced()		// å›½å®¶å…¬å¸ƒ  A34 
 {
 
 
 }
 
 
-int PatentApplication(PATENT_APPLICATION_ENUM Obj_app)			// ÉêÇëÁ÷³Ì
+int PatentApplication(PATENT_APPLICATION_ENUM Obj_app)			// ç”³è¯·æµç¨‹
 {
 
-	if(FALSE == CheckPepole())   // ÉêÇëÖ÷Ìå
+	if(FALSE == CheckPepole())   // ç”³è¯·ä¸»ä½“
 	{
 		return FALSE;
 	}
 
-	if(FALSE == CheckObj())		// ±£»¤¿ÍÌå  A25
+	if(FALSE == CheckObj())		// ä¿æŠ¤å®¢ä½“  A25
 	{
 		return FALSE;
 	}
@@ -297,7 +298,7 @@ int PatentApplication(PATENT_APPLICATION_ENUM Obj_app)			// ÉêÇëÁ÷³Ì
 		if(Fisrt_trail())		
 			{
 				if((Priority_date + MONTH_18)||(Want_to_advance_announce))
-			 		Announced()												// ¹ú¼Ò¹«²¼
+			 		Announced()												// å›½å®¶å…¬å¸ƒ
 			 
 				if(Second_Trail())
 					{
@@ -323,12 +324,12 @@ int PatentApplication(PATENT_APPLICATION_ENUM Obj_app)			// ÉêÇëÁ÷³Ì
 }
 
 
-/************************		PCT ÉêÇë						**********************************/
+/************************		PCT ç”³è¯·						**********************************/
 
 int Check_written_statement()
 {
-	// ÊÜÀí¹ú¼Ê¾Ö ¡¢¹ú¼ÊÉêÇëºÅ ¡¢ÉêÇëµÄ×¨ÀûÀàĞÍ
-	// (ÒÅ´«×ÊÔ´ÅûÂ¶±í)	R109 (if necessary)
+	// å—ç†å›½é™…å±€ ã€å›½é™…ç”³è¯·å· ã€ç”³è¯·çš„ä¸“åˆ©ç±»å‹
+	// (é—ä¼ èµ„æºæŠ«éœ²è¡¨)	R109 (if necessary)
 	
 	// written in Chinese
 }
@@ -348,16 +349,16 @@ int CheckFees_For_PCT() // R93 && R103
 }
 int CheckFiles_in_Chinese()
 {
-	// ËµÃ÷Êé¡¢È¨ÀûÒªÇóÊéµÄÖĞÎÄÒëÎÄ
+	// è¯´æ˜ä¹¦ã€æƒåˆ©è¦æ±‚ä¹¦çš„ä¸­æ–‡è¯‘æ–‡
 }
 int Give_prove_for_EnterNationalStage() // R104
 {
 	int date;
 	
-	date = PCT_EnterNational_date;	// ¸øÓè¹ú¼Ò½øÈëÈÕ ¡¢ ¹ú¼ÒÉêÇëºÅ
+	date = PCT_EnterNational_date;	// ç»™äºˆå›½å®¶è¿›å…¥æ—¥ ã€ å›½å®¶ç”³è¯·å·
 }
 
-int CheckOther4Condition_For_PCT() // R104 PCT ½øÈë¹ú¼Ò½×¶ÎÊ±£¬Áí4ÏîÊÖĞøÒªÇó
+int CheckOther4Condition_For_PCT() // R104 PCT è¿›å…¥å›½å®¶é˜¶æ®µæ—¶ï¼Œå¦4é¡¹æ‰‹ç»­è¦æ±‚
 {
 }
 int CorrectFlow_For_PCT()
@@ -365,7 +366,7 @@ int CorrectFlow_For_PCT()
 
 }
 
-int Enter_National_Stage() // ½øÈë¹ú¼Ò½×¶Î
+int Enter_National_Stage() // è¿›å…¥å›½å®¶é˜¶æ®µ
 {
 	if(FALSE == Check_written_statement())
 		return FAILED_EFFECT_TERMINAT;
@@ -402,7 +403,7 @@ int Enter_National_Stage() // ½øÈë¹ú¼Ò½×¶Î
 
 int PatentApplication_For_PCT(PATENT_APPLICATION_ENUM Obj_app)
 {
-	if(FAILED_WITHDRAW_FOR_PCT || FAILED_WITHDRAWED_FOR_PCT || FAILED_WITHDRAW_CHINA_FOR_PCT)  // ¹ú¼Ê½×¶Î   R105
+	if(FAILED_WITHDRAW_FOR_PCT || FAILED_WITHDRAWED_FOR_PCT || FAILED_WITHDRAW_CHINA_FOR_PCT)  // å›½é™…é˜¶æ®µ   R105
 		return FAILED_EFFECT_TERMINAT;
 	
 	if(Priority_date + MONTH_30)
@@ -422,9 +423,9 @@ int PatentApplication_For_PCT(PATENT_APPLICATION_ENUM Obj_app)
 }
 
 
-/***********************		×¨ÀûÈ¨µÄ±£»¤								********************************************/
+/***********************		ä¸“åˆ©æƒçš„ä¿æŠ¤								********************************************/
 
-int ProtectPatent()   // ±£»¤³ÌĞò
+int ProtectPatent()   // ä¿æŠ¤ç¨‹åº
 {
 
 

@@ -2,56 +2,56 @@
 
 
 
-#define TheSummaryOf_Instruction // ËµÃ÷ÊéÕªÒª
+#define TheSummaryOf_Instruction // è¯´æ˜ä¹¦æ‘˜è¦
 
-#define Claims								// È¨ÀûÒªÇóÊé
+#define Claims								// æƒåˆ©è¦æ±‚ä¹¦
 
-#define Instructions					// ËµÃ÷Êé
+#define Instructions					// è¯´æ˜ä¹¦
 
-#define Instructions_TechnicalField  // ¼¼ÊõÁìÓò
+#define Instructions_TechnicalField  // æŠ€æœ¯é¢†åŸŸ
 
-#define Instructions_BackgroundTech  // ±³¾°¼¼Êõ
+#define Instructions_BackgroundTech  // èƒŒæ™¯æŠ€æœ¯
 
-#define Instructions_Invention			// ·¢Ã÷ÄÚÈİ
+#define Instructions_Invention			// å‘æ˜å†…å®¹
 
-#define Instructions_DescriptionOfTheDrawings  // ¸½Í¼ËµÃ÷
+#define Instructions_DescriptionOfTheDrawings  // é™„å›¾è¯´æ˜
 
-#define Instructions_ImplementationMethod		// ÊµÊ©·½Ê½
+#define Instructions_ImplementationMethod		// å®æ–½æ–¹å¼
 
-#define ManualDrawing					// ËµÃ÷Êé¸½Í¼	
+#define ManualDrawing					// è¯´æ˜ä¹¦é™„å›¾	
 
 
 
-#define Methond_Invention		// ·½·¨·¢Ã÷
+#define Methond_Invention		// æ–¹æ³•å‘æ˜
 
 void DocOfApplication()
 {
 
     TheSummaryOf_Instruction
-   		// 300×ÖÒÔÄÚ
+   		// 300å­—ä»¥å†…
 
 	Claims
 
 		if(Methond_Invention){
 
-				// È¨1-È¨5£¬·½·¨È¨ÀûÒªÇó
-				// È¨6-È¨x£¬Óë·½·¨È¨ÀûÒªÇó¶ÔÓ¦µÄ×°ÖÃÈ¨ÀûÒªÇó
-				// È¨x+1 ,È¨x+2, ÖÕ¶ËÉè±¸ + ¼ÆËã»ú¿É¶Á´æ´¢½éÖÊ È¨ÀûÒªÇó
+				// æƒ1-æƒ5ï¼Œæ–¹æ³•æƒåˆ©è¦æ±‚
+				// æƒ6-æƒxï¼Œä¸æ–¹æ³•æƒåˆ©è¦æ±‚å¯¹åº”çš„è£…ç½®æƒåˆ©è¦æ±‚
+				// æƒx+1 ,æƒx+2, ç»ˆç«¯è®¾å¤‡ + è®¡ç®—æœºå¯è¯»å­˜å‚¨ä»‹è´¨ æƒåˆ©è¦æ±‚
 		}
 		
     Instructions
 	{
-		Instructions_TechnicalField		// ×î½Ó½üµÄÁìÓò
+		Instructions_TechnicalField		// æœ€æ¥è¿‘çš„é¢†åŸŸ
 
-		Instructions_BackgroundTech		// Òı³ö¼¼ÊõÎÊÌâ
+		Instructions_BackgroundTech		// å¼•å‡ºæŠ€æœ¯é—®é¢˜
 
 		Instructions_Invention
 
 			if(Methond_Invention){
-				// µÚÒ»·½Ãæ  ¶ÀÈ¨·½·¨		³­¶ÀÈ¨1
-				// µÚ¶ş·½Ãæ  ¶ÀÈ¨×°ÖÃ		³­¶ÀÈ¨6
-				// µÚÈı·½Ãæ  ÖÕ¶ËÉè±¸
-				// µÚËÄ·½Ãæ  ¼ÆËã»ú¿É¶Á´æ´¢½éÖÊ
+				// ç¬¬ä¸€æ–¹é¢  ç‹¬æƒæ–¹æ³•		æŠ„ç‹¬æƒ1
+				// ç¬¬äºŒæ–¹é¢  ç‹¬æƒè£…ç½®		æŠ„ç‹¬æƒ6
+				// ç¬¬ä¸‰æ–¹é¢  ç»ˆç«¯è®¾å¤‡
+				// ç¬¬å››æ–¹é¢  è®¡ç®—æœºå¯è¯»å­˜å‚¨ä»‹è´¨
 
 
 			}
@@ -61,26 +61,26 @@ void DocOfApplication()
 		Instructions_ImplementationMethod	
 
 			if(Methond_Invention){
-				// ÊµÊ©Àı1(·½·¨)   ²½ÖèS1...¶ÔÓ¦¶ÀÈ¨1
-				//                 ²½ÖèS21,S22,...¶ÔÓ¦´ÓÈ¨2-5
+				// å®æ–½ä¾‹1(æ–¹æ³•)   æ­¥éª¤S1...å¯¹åº”ç‹¬æƒ1
+				//                 æ­¥éª¤S21,S22,...å¯¹åº”ä»æƒ2-5
 
-				// ÊµÊ©Àı2(×°ÖÃ)   Ä£¿éÓë²½ÖèÒ»Ò»¶ÔÓ¦
+				// å®æ–½ä¾‹2(è£…ç½®)   æ¨¡å—ä¸æ­¥éª¤ä¸€ä¸€å¯¹åº”
 
-				// ÊµÊ©Àı3(¼ÆËã»ú¿É¶Á´æ´¢½éÖÊ)
+				// å®æ–½ä¾‹3(è®¡ç®—æœºå¯è¯»å­˜å‚¨ä»‹è´¨)
 
-				// ÊµÊ©Àı4(ÖÕ¶ËÉè±¸)
+				// å®æ–½ä¾‹4(ç»ˆç«¯è®¾å¤‡)
 
 			}
 	}
 
 	ManualDrawing
-		// Í¼1 ¶ÔÓ¦ ÊµÊ©Àı1ÖĞ¶ÀÈ¨²¿·Ö
+		// å›¾1 å¯¹åº” å®æ–½ä¾‹1ä¸­ç‹¬æƒéƒ¨åˆ†
 
-	    // Í¼2.. ¶ÔÓ¦ ÊµÊ©Àı1ÖĞ´ÓÈ¨²¿·Ö
+	    // å›¾2.. å¯¹åº” å®æ–½ä¾‹1ä¸­ä»æƒéƒ¨åˆ†
 
-  		// Í¼x ¶ÔÓ¦ ÊµÊ©Àı2(×°ÖÃ)
+  		// å›¾x å¯¹åº” å®æ–½ä¾‹2(è£…ç½®)
 
-		// Í¼x ¶ÔÓ¦ ÊµÊ©Àı4(ÖÕ¶ËÉè±¸)
+		// å›¾x å¯¹åº” å®æ–½ä¾‹4(ç»ˆç«¯è®¾å¤‡)
 	
 
 }
